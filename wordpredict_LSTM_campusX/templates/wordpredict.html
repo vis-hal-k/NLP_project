@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Next Word Predictor</title>
+
+  <!-- Link CSS from static -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='wordpredict.css') }}">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h2>Next Word Predictor</h2>
+  </header>
+
+  <!-- Main Box -->
+<main class="main-box">
+  <h1>Type your sentence</h1>
+  <input type="text" id="userInput" placeholder="Start typing a sentence." />
+  <div id="result"></div>
+</main>
+  <!-- Load JS from static -->
+  <script src="{{ url_for('static', filename='wordpredict.js') }}"></script>
+</body>
+</html>
